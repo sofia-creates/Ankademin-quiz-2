@@ -1,30 +1,70 @@
-#resultBtn {
-    margin-top: 30px;
-    border-radius: 5px;
-    
+body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.5em;
+}
+body main {
+  width: 60%;
+  min-width: 400px;
+  margin-top: 50px;
+  /*display: flex;
+  flex-direction: column;
+  align-items: center; */
 }
 
-.greenText {
-    color: green;
+#form {
+  margin-top: 50px;
 }
 
-.orangeText {
-    color: orange;
+h1 {
+  font-size: 60px;
+  font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Calisto MT, Times New Roman, serif;
+  line-height: 1em;
 }
 
-.redText {
-    color: red;
+p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(46, 46, 46);
 }
 
-
-#darkModeBtn{
-    background-color: rgb(68, 68, 68);
-    color:white;
-    border-radius: 5px;
-
+#darkModeBtn {
+  width: 10%;
+  background-color: rgb(46, 46, 46);
+  color: white;
+  border-radius: 5px;
+  padding: 9px;
+  position: absolute;
+  top: 5%;
+  right: 10%;
 }
 
 .darkMode {
-    background-color: rgb(68, 68, 68);
-    color: white;
+  background-color: rgb(46, 46, 46);
+  color: white;
 }
+.darkMode #darkModeBtn {
+  background-color: white;
+  color: rgb(46, 46, 46);
+}
+
+#resultBtn {
+  width: 15%;
+  min-width: 30px;
+  margin-top: 30px;
+  border-radius: 5px;
+  padding: 9px;
+}
+
+.greenText {
+  color: green;
+}
+
+.orangeText {
+  color: orange;
+}
+
+.redText {
+  color: red;
+}/*# sourceMappingURL=style.css.map */

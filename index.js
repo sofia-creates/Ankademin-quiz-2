@@ -1,8 +1,27 @@
+//dark mode
+let darkModeBtn = document.querySelector('#darkModeBtn');
+
+darkModeBtn.addEventListener('click', ()=>{
+    if (document.body.classList.contains('darkMode')){
+        document.body.classList.remove("darkMode");
+    } else if (document.body.classList.contains('darkMode') === false){
+        document.body.classList.add("darkMode"); }
+});
+
+
+
+
+//quizzet
+
 let resultBtn = document.querySelector('#resultBtn');
 
 let resultsPlace = document.querySelector('#resultsPlace')
 
-let correctAnswers = ["A", "B", "A", "B", "B"]
+let correctAnswers = ["A", "B", "A", "B", "B", "D", "B"]
+
+
+
+//Hela tjotafräset med quizzet
 
 resultBtn.addEventListener('click', ()=>{
     
@@ -37,7 +56,7 @@ resultBtn.addEventListener('click', ()=>{
 
         //sätta ny färg och skriva ny text
         resultsPlace.classList.add("greenText");
-        resultsPlace.innerText = "antal rätt: " + amountOfRightAnswers + " utav " + correctAnswers.length + " möjliga. Ditt betyg: VG" ;
+        resultsPlace.innerText = "Antal rätt: " + amountOfRightAnswers + " utav " + correctAnswers.length + " möjliga. Ditt betyg: VG" ;
 
         console.log('vg test');
     } else if (amountOfRightAnswers >= correctAnswers.length*0.50){
@@ -48,7 +67,7 @@ resultBtn.addEventListener('click', ()=>{
 
         //ny färg ny text
         resultsPlace.classList.add("orangeText");
-        resultsPlace.innerText = "antal rätt: " + amountOfRightAnswers + " utav " + correctAnswers.length + " möjliga. Ditt betyg: G" ;
+        resultsPlace.innerText = "Antal rätt: " + amountOfRightAnswers + " utav " + correctAnswers.length + " möjliga. Ditt betyg: G" ;
 
         console.log('g test');
     } else if (amountOfRightAnswers < correctAnswers.length*0.50){
@@ -59,7 +78,7 @@ resultBtn.addEventListener('click', ()=>{
 
         //ny färg ny text
         resultsPlace.classList.add("redText");
-        resultsPlace.innerText = "antal rätt: " + amountOfRightAnswers + " utav " + correctAnswers.length + " möjliga. Ditt betyg: U" ;
+        resultsPlace.innerText = "Antal rätt: " + amountOfRightAnswers + " utav " + correctAnswers.length + " möjliga. Ditt betyg: U" ;
         console.log('u test');
     } else {
         resultsPlace.innerText = "Har du fyllt i quizet?"

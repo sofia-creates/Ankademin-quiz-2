@@ -9,45 +9,84 @@
 <body>
     <button id="darkModeBtn">Dark mode</button>
 
-    <h1>Sagan om ringen quiz</h1>
-    <p>Välkommen kära Ankademin student! Dagens quiz handlar om Sagan om ringen</p>
+    <main>
+        <h1>Sagan om ringen quiz</h1>
+        <p>Välkommen kära Ankademin student! Dagens quiz handlar om Sagan om ringen</p>
+    
+        <div id ="form">
 
-    <h2>Sant eller falskt</h2>
 
-    <h3 class="question">Den första boken i trilogin publicerades 1954.</h3>
-    <label for="true1">Sant</label>
-    <input type="radio" name="trueOrFalse1" id="true1" value="A">
-    <label for="false1">Falskt</label>
-    <input type="radio" name="trueOrFalse1" id="false1" value="B">
+            <section>
+                <h2>Sant eller falskt</h2>
+                
+                <h3 class="question">Den första boken i trilogin publicerades 1954.</h3>
+                <input type="radio" name="trueOrFalse1" id="true1" value="A">
+                <label for="true1">Sant</label>
+                <input type="radio" name="trueOrFalse1" id="false1" value="B">
+                <label for="false1">Falskt</label>
+                
+                <h3 class="question">Filmtrilogin vann sammanlagt 4 Oscars, utav 9 nomineringar.</h3>
+                <input type="radio" name="trueOrFalse2" id="true2" value="A">
+                <label for="true2">Sant</label>
+                <input type="radio" name="trueOrFalse2" id="false2" value="B">
+                <label for="false2">Falskt</label>
+                
+                <h3 class="question">Christopher Lee, som spelade Saruman, var den enda inblandade skådisen som träffade JRR Tolkien.</h3>
+                <input type="radio" name="trueOrFalse3" id="true3" value="A">
+                <label for="true3">Sant</label>
+                <input type="radio" name="trueOrFalse3" id="false3" value="B">
+                <label for="false3">Falskt</label>
+                
+                <h3 class="question">Filmtrilogin spelades in helt i Storbitannien</h3>
+                <input type="radio" name="trueOrFalse4" id="true4" value="A">
+                <label for="true4">Sant</label>
+                <input type="radio" name="trueOrFalse4" id="false4" value="B">
+                <label for="false4">Falskt</label>
+                
+                <h3 class="question">"The Hobbit" filmerna var bra.</h3>
+                <input type="radio" name="trueOrFalse5" id="true5" value="A">
+                <label for="true5">Sant</label>
+                <input type="radio" name="trueOrFalse5" id="false5" value="B">
+                <label for="true1">Falskt</label>
+            
+        </section>
 
-    <h3 class="question">Filmtrilogin vann sammanlagt 4 Oscars, utav 9 nomineringar.</h3>
-    <label for="true2">Sant</label>
-    <input type="radio" name="trueOrFalse2" id="true2" value="A">
-    <label for="false2">Falskt</label>
-    <input type="radio" name="trueOrFalse2" id="false2" value="B">
+        <section>
+            <h2>Flerval</h2>
+            <h3 class="question">Vem av följande skådespelare var INTE med i Sagan om ringen trilogin?</h3>
+            <input type="radio" name="multipleChoice1" id="alt1Multiple1" value="A">
+            <label for="alt1Multiple1">Sean Bean</label>
+            <input type="radio" name="multipleChoice1" id="alt2Multiple1" value="B">
+            <label for="alt2Multiple1">Ian McKellen</label>
+            <input type="radio" name="multipleChoice1" id="alt4Multiple1" value="C">
+            <label for="alt3Multiple1">Miranda Otto</label>
+            <input type="radio" name="multipleChoice1" id="alt4Multiple1" value="D">
+            <label for="alt1Multiple1">Emilia Clarke</label>
 
-    <h3 class="question">Christopher Lee, som spelade Saruman, var den enda inblandade skådisen som träffade JRR Tolkien.</h3>
-    <label for="true3">Sant</label>
-    <input type="radio" name="trueOrFalse3" id="true3" value="A">
-    <label for="false3">Falskt</label>
-    <input type="radio" name="trueOrFalse3" id="false3" value="B">
+            <h3 class="question">Produktionen förde med sig ett genombrott inom AI för animation. Vad gällde genombrottet för sorts animation?</h3>
+            <input type="radio" name="multipleChoice2" id="alt1Multiple2" value="A">
+            <label for="alt1Multiple1">Djur, särskilt hästar</label>
+            <input type="radio" name="multipleChoice2" id="alt2Multiple2" value="B">
+            <label for="alt2Multiple1">Folkmassor</label>
+            <input type="radio" name="multipleChoice2" id="alt4Multiple2" value="C">
+            <label for="alt3Multiple1">Drakar</label>
+            <input type="radio" name="multipleChoice2" id="alt4Multiple2" value="D">
+            <label for="alt1Multiple1">Explosioner</label>
 
-    <h3 class="question">Filmerna spelades in helt i Storbritannien.</h3>
-    <label for="true4">Sant</label>
-    <input type="radio" name="trueOrFalse4" id="true4" value="A">
-    <label for="false4">Falskt</label>
-    <input type="radio" name="trueOrFalse4" id="false4" value="B">
+        </section>
+        
 
-    <h3 class="question">"The Hobbit" filmerna var bra.</h3>
-    <label for="true5">Sant</label>
-    <input type="radio" name="trueOrFalse5" id="true5" value="A">
-    <label for="true1">Falskt</label>
-    <input type="radio" name="trueOrFalse5" id="false5" value="B">
+        
+        <section>
+            <br>
+            <button id="resultBtn">Resultat</button>
+            
+            <p id="resultsPlace"></p>
+        </section>
+    </div>
 
-    <br>
-    <button id="resultBtn">Resultat</button>
 
-    <p id="resultsPlace"></p>
+    </main>
 
 
     <script src="index.js"></script>
