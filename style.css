@@ -1,3 +1,30 @@
 #resultBtn {
     margin-top: 30px;
+    border-radius: 5px;
+    
+}
+
+.greenText {
+    color: green;
+}
+
+.orangeText {
+    color: orange;
+}
+
+.redText {
+    color: red;
+}
+
+
+#darkModeBtn{
+    background-color: rgb(68, 68, 68);
+    color:white;
+    border-radius: 5px;
+
+}
+
+.darkMode {
+    background-color: rgb(68, 68, 68);
+    color: white;
 }
