@@ -13,9 +13,16 @@ body main {
   flex-direction: column;
   align-items: center; */
 }
+body section {
+  margin-bottom: 15%;
+}
 
 #form {
   margin-top: 50px;
+}
+
+h1, h2, h3, p, label {
+  color: rgb(46, 46, 46);
 }
 
 h1 {
@@ -24,7 +31,18 @@ h1 {
   line-height: 1em;
 }
 
-p {
+h2 {
+  font-size: 34px;
+  color: rgb(57, 57, 57);
+}
+
+h3 {
+  font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Calisto MT, Times New Roman, serif;
+  line-height: 1.2em;
+  letter-spacing: 0.3px;
+}
+
+p, input, section label {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: rgb(46, 46, 46);
 }
@@ -42,6 +60,8 @@ p {
 
 .darkMode {
   background-color: rgb(46, 46, 46);
+}
+.darkMode h1, .darkMode h2, .darkMode h3, .darkMode p, .darkMode label {
   color: white;
 }
 .darkMode #darkModeBtn {

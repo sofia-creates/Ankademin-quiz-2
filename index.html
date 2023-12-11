@@ -19,64 +19,117 @@
             <section>
                 <h2>Sant eller falskt</h2>
                 
-                <h3 class="question">Den första boken i trilogin publicerades 1954.</h3>
+                <h3 class="question">1. Den första boken i trilogin publicerades 1954.</h3>
                 <input type="radio" name="trueOrFalse1" id="true1" value="A">
                 <label for="true1">Sant</label>
                 <input type="radio" name="trueOrFalse1" id="false1" value="B">
                 <label for="false1">Falskt</label>
                 
-                <h3 class="question">Filmtrilogin vann sammanlagt 4 Oscars, utav 9 nomineringar.</h3>
+                <h3 class="question">2. Filmtrilogin vann sammanlagt 4 Oscars, utav 9 nomineringar.</h3>
                 <input type="radio" name="trueOrFalse2" id="true2" value="A">
                 <label for="true2">Sant</label>
                 <input type="radio" name="trueOrFalse2" id="false2" value="B">
                 <label for="false2">Falskt</label>
                 
-                <h3 class="question">Christopher Lee, som spelade Saruman, var den enda inblandade skådisen som träffade JRR Tolkien.</h3>
+                <h3 class="question">3. Christopher Lee, som spelade Saruman, var den enda inblandade skådisen som träffade JRR Tolkien.</h3>
                 <input type="radio" name="trueOrFalse3" id="true3" value="A">
                 <label for="true3">Sant</label>
                 <input type="radio" name="trueOrFalse3" id="false3" value="B">
                 <label for="false3">Falskt</label>
                 
-                <h3 class="question">Filmtrilogin spelades in helt i Storbitannien</h3>
+                <h3 class="question">4. Filmtrilogin spelades in helt i Storbitannien</h3>
                 <input type="radio" name="trueOrFalse4" id="true4" value="A">
                 <label for="true4">Sant</label>
                 <input type="radio" name="trueOrFalse4" id="false4" value="B">
                 <label for="false4">Falskt</label>
                 
-                <h3 class="question">"The Hobbit" filmerna var bra.</h3>
-                <input type="radio" name="trueOrFalse5" id="true5" value="A">
+                <h3 class="question">5. "The Hobbit" filmerna var bra.</h3>
+                <input type="radio" name="trueOrFalse5" id="true5" value="A" id="q5True">
                 <label for="true5">Sant</label>
-                <input type="radio" name="trueOrFalse5" id="false5" value="B">
+                <input type="radio" name="trueOrFalse5" id="false5" value="B" >
                 <label for="true1">Falskt</label>
             
         </section>
 
         <section>
             <h2>Flerval</h2>
-            <h3 class="question">Vem av följande skådespelare var INTE med i Sagan om ringen trilogin?</h3>
+            <h3 class="question">6. Vilken skådespelare bröt en tå under inspelningen?</h3>
+
             <input type="radio" name="multipleChoice1" id="alt1Multiple1" value="A">
-            <label for="alt1Multiple1">Sean Bean</label>
+            <label for="alt1Multiple1">Billy Boyd</label>
+
             <input type="radio" name="multipleChoice1" id="alt2Multiple1" value="B">
             <label for="alt2Multiple1">Ian McKellen</label>
+
             <input type="radio" name="multipleChoice1" id="alt4Multiple1" value="C">
             <label for="alt3Multiple1">Miranda Otto</label>
-            <input type="radio" name="multipleChoice1" id="alt4Multiple1" value="D">
-            <label for="alt1Multiple1">Emilia Clarke</label>
 
-            <h3 class="question">Produktionen förde med sig ett genombrott inom AI för animation. Vad gällde genombrottet för sorts animation?</h3>
+            <input type="radio" name="multipleChoice1" id="alt4Multiple1" value="D">
+            <label for="alt1Multiple1">Viggo Mortensen</label>
+
+            <h3 class="question">7. Produktionen förde med sig ett genombrott inom AI för animation. Vad gällde genombrottet för sorts animation?</h3>
+
             <input type="radio" name="multipleChoice2" id="alt1Multiple2" value="A">
             <label for="alt1Multiple1">Djur, särskilt hästar</label>
+
             <input type="radio" name="multipleChoice2" id="alt2Multiple2" value="B">
             <label for="alt2Multiple1">Folkmassor</label>
+
             <input type="radio" name="multipleChoice2" id="alt4Multiple2" value="C">
             <label for="alt3Multiple1">Drakar</label>
+            
             <input type="radio" name="multipleChoice2" id="alt4Multiple2" value="D">
             <label for="alt1Multiple1">Explosioner</label>
 
         </section>
+
+
+        <section id="checkbox-section">
+            <h2>Kryssa i alla rätta alternativ</h2>
+
+
+            <h3 class="question">8. Vilka av följande skådespelare var med i Sagan om ringen?</h3>
+
+            <input type="checkbox" id="alt1Several1" value="A" name="several1">
+            <label for="alt1Several1">Sean Bean</label>
+
+            <input type="checkbox" id="alt2Several1" value="B" name="several1">
+            <label for="alt2Several1">Cate Blanchett</label>
+
+            <input type="checkbox" id="alt3Several1" value="C" name="several1">
+            <label for="alt3Several1">Orlando Bloom</label>
+
+            <input type="checkbox" id="alt4Several1" value="D" name="several1">
+            <label for="alt4Several1">Ian McKellen</label>
+
+            <input type="checkbox" id="alt5Several1" value="E" name="several1">
+            <label for="alt5Several1">Keira Knightley</label>
+
+
+
+            <h3 class="question">9. Vilka av följande karaktärer överlever?</h3>
+
+            <input type="checkbox" id="alt1Several1" value="A"  name="several2">
+            <label for="alt1Several1">Arwen</label>
+
+            <input type="checkbox" id="alt2Several1" value="B" name="several2">
+            <label for="alt2Several1">Galadriel</label>
+
+            <input type="checkbox" id="alt3Several1" value="C" name="several2">
+            <label for="alt3Several1">Gandalf</label>
+
+            <input type="checkbox" id="alt4Several1" value="D" name="several2">
+            <label for="alt4Several1">Theoden</label>
+
+            <input type="checkbox" id="alt5Several1" value="E" name="several2">
+            <label for="alt5Several1">Boromir</label>
+
+
+
+        </section>
         
 
-        
+
         <section>
             <br>
             <button id="resultBtn">Resultat</button>
