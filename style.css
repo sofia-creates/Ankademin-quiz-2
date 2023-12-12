@@ -14,7 +14,7 @@ body main {
   align-items: center; */
 }
 body section {
-  margin-bottom: 15%;
+  margin-bottom: 10%;
 }
 
 #form {
@@ -64,6 +64,15 @@ p, input, section label {
 .darkMode h1, .darkMode h2, .darkMode h3, .darkMode p, .darkMode label {
   color: white;
 }
+.darkMode .greenText {
+  color: rgb(126, 190, 126);
+}
+.darkMode .orangeText {
+  color: rgb(253, 190, 72);
+}
+.darkMode .redText {
+  color: rgb(249, 92, 92);
+}
 .darkMode #darkModeBtn {
   background-color: white;
   color: rgb(46, 46, 46);
@@ -87,4 +96,8 @@ p, input, section label {
 
 .redText {
   color: red;
+}
+
+.hide {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

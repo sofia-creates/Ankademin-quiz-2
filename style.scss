@@ -17,7 +17,7 @@ body{
     }
 
     section {
-        margin-bottom: 15%;
+        margin-bottom: 10%;
     }
 }
 
@@ -76,6 +76,18 @@ p, input, section label {
         color: white;
     }
 
+    .greenText {
+        color: rgb(126, 190, 126);
+    }
+    
+    .orangeText {
+        color: rgb(253, 190, 72);
+    }
+    
+    .redText {
+        color: rgb(249, 92, 92);
+    }
+
     #darkModeBtn{
         background-color: white;
         color: rgb(46,46,46);
@@ -108,3 +120,6 @@ p, input, section label {
     color: red;
 }
 
+.hide {
+    display: none;
+}

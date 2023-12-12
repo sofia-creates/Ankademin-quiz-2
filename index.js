@@ -11,6 +11,7 @@ darkModeBtn.addEventListener('click', ()=>{
 
 
 
+
 //variabler till quizzet
 
 let resultBtn = document.querySelector('#resultBtn');
@@ -24,7 +25,16 @@ let correctAnswersQ9 = ["D", "E"];
 let correctAnswers = ["A", "B", "A", "B", "B", "D", "B", correctAnswersQ8, correctAnswersQ9];
 
 
-console.log("antal rätt svar i facit är "+correctAnswers.length);
+console.log("antal möjliga  rätta svar i facit är "+correctAnswers.length);
+
+
+
+
+//variabel till bild
+
+let youShallNotPass = document.querySelector('#you-shall-not-pass-img');
+
+
 
 
 //Alert till fråga 5
@@ -85,32 +95,30 @@ resultBtn.addEventListener('click', ()=>{
 
 
     //jämföra checkboxarna först. det behöver göras separat eftersom här måste ALLA svaren i arrayen matcha, behöver använda every metoden.
-
-
-
-
-
-    //skapa funktion som jämför HÄR ÄR FUCKING PROBLEMET FIXA PÅ NÅT SÄTT
-
-    function areCheckboxArraysEqual(array1 , facit) {
-        array1.every((answer, index) => 
-            answer === facit[index] ) 
-    };
-
-    // och en if sats som kör funktionerna och lägger till en räknare om de returnerar true.
-    
-    if (areCheckboxArraysEqual(checkedBoxesq8, correctAnswersQ8)){
-        amountOfRightAnswers++;
-    };
    
-        
+    
+    let isQ8Correct = checkBoxArrayq8.length > 4 && checkBoxArrayq8.every((answer, index) => answer === correctAnswersQ8[index]);
 
+    console.log("q8=" + isQ8Correct); //varför är den false även när if satsen körs??? det vete fan
+    if (isQ8Correct ==true){
+        amountOfRightAnswers++;
+    }
+    console.log("q8=" + isQ8Correct);
+
+    let isQ9Correct = checkBoxArrayq9.length > 2 &&checkBoxArrayq9.every((answer, index) => answer === correctAnswersQ9[index]);
+
+    if (isQ9Correct){
+        amountOfRightAnswers++;
+    }
+
+
+    //console.log(isQ9Correct);
     console.log(amountOfRightAnswers);
 
 
 
 
-    
+
 
     //sedan resten av svaren
 
@@ -133,6 +141,9 @@ resultBtn.addEventListener('click', ()=>{
         resultsPlace.classList.add("greenText");
         resultsPlace.innerText = "Antal rätt: " + amountOfRightAnswers + " utav " + correctAnswers.length + " möjliga. Ditt betyg: VG" ;
 
+        //göm bild
+        youShallNotPass.classList.add('hide');
+
         console.log('vg test');
     } else if (amountOfRightAnswers >= correctAnswers.length*0.50){
         //ta bort tidigare färger och tömma tidigare text 
@@ -144,6 +155,10 @@ resultBtn.addEventListener('click', ()=>{
         resultsPlace.classList.add("orangeText");
         resultsPlace.innerText = "Antal rätt: " + amountOfRightAnswers + " utav " + correctAnswers.length + " möjliga. Ditt betyg: G" ;
 
+
+        //göm bild
+         youShallNotPass.classList.add('hide');
+
         console.log('g test');
     } else if (amountOfRightAnswers < correctAnswers.length*0.50){
         //ta bort tidigare färger och tömma tidigare text 
@@ -154,6 +169,10 @@ resultBtn.addEventListener('click', ()=>{
         //ny färg ny text
         resultsPlace.classList.add("redText");
         resultsPlace.innerText = "Antal rätt: " + amountOfRightAnswers + " utav " + correctAnswers.length + " möjliga. Ditt betyg: U" ;
+
+        //visa bild
+        youShallNotPass.classList.remove('hide');
+
         console.log('u test');
     } else {
         resultsPlace.innerText = "Har du fyllt i quizet?"
