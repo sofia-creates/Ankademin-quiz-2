@@ -97,15 +97,15 @@ resultBtn.addEventListener('click', ()=>{
     //jämföra checkboxarna först. det behöver göras separat eftersom här måste ALLA svaren i arrayen matcha, behöver använda every metoden.
    
     
-    let isQ8Correct = checkBoxArrayq8.length > 4 && checkBoxArrayq8.every((answer, index) => answer === correctAnswersQ8[index]);
+    let isQ8Correct = checkBoxArrayq8.length == 4 && checkBoxArrayq8.every((answer, index) => answer === correctAnswersQ8[index]);
 
     console.log("q8=" + isQ8Correct); //varför är den false även när if satsen körs??? det vete fan
-    if (isQ8Correct ==true){
+    if (isQ8Correct){
         amountOfRightAnswers++;
     }
     console.log("q8=" + isQ8Correct);
 
-    let isQ9Correct = checkBoxArrayq9.length > 2 &&checkBoxArrayq9.every((answer, index) => answer === correctAnswersQ9[index]);
+    let isQ9Correct = checkBoxArrayq9.length == 2 &&checkBoxArrayq9.every((answer, index) => answer === correctAnswersQ9[index]);
 
     if (isQ9Correct){
         amountOfRightAnswers++;
