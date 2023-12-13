@@ -37,7 +37,6 @@ console.log("antal möjliga  rätta svar i facit är "+correctAnswers.length);
 
 
 //variabel till bild
-
 let youShallNotPass = document.querySelector('#you-shall-not-pass-img');
 
 
@@ -56,7 +55,7 @@ resultBtn.addEventListener('click', ()=>{
         userAnswerArray.push(radio.value);
     });
 
-    console.log(userAnswerArray);
+    //console.log(userAnswerArray);
 
 
     //steg 1b: hämta värdet från checkade checkboxar. Två variabler, två frågor.
@@ -80,26 +79,20 @@ resultBtn.addEventListener('click', ()=>{
 
 
 
-
     //steg 2: jämföra användarens svar med facit
     let amountOfRightAnswers = 0;
     let amountOfWrongAnswers = 0;
 
 
 
-
-
-
-    //jämföra checkboxarna först. det behöver göras separat eftersom här måste ALLA svaren i arrayen matcha, behöver använda every metoden.
+    //2.a Jämföra checkboxarna först. det behöver göras separat eftersom här måste ALLA svaren i arrayen matcha, behöver använda every metoden.
    
     
     let isQ8Correct = checkBoxArrayq8.length == 4 && checkBoxArrayq8.every((answer, index) => answer === correctAnswersQ8[index]);
 
-    console.log("q8=" + isQ8Correct); //varför är den false även när if satsen körs??? det vete fan
     if (isQ8Correct){
         amountOfRightAnswers++;
     }
-    console.log("q8=" + isQ8Correct);
 
     let isQ9Correct = checkBoxArrayq9.length == 2 &&checkBoxArrayq9.every((answer, index) => answer === correctAnswersQ9[index]);
 
@@ -108,16 +101,13 @@ resultBtn.addEventListener('click', ()=>{
     }
 
 
-    //console.log(isQ9Correct);
     console.log(amountOfRightAnswers);
 
 
 
+    //2.b Sedan resten av svaren
 
-
-
-    //sedan resten av svaren
-
+    //jämför användarens svar med facit och räkna antal rätt.
     userAnswerArray.forEach((answer, index) => {
         if (answer === correctAnswers[index]){
             amountOfRightAnswers++;
