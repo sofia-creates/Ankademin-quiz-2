@@ -1,12 +1,16 @@
 body {
-  padding: 20px;
+  padding: 0px;
+  padding-bottom: 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
   line-height: 1.5em;
+  background: linear-gradient(white 20%, #a8baa0);
 }
 body main {
-  width: 60%;
+  width: 40%;
   min-width: 400px;
   margin-top: 50px;
   /*display: flex;
@@ -15,6 +19,10 @@ body main {
 }
 body section {
   margin-bottom: 10%;
+}
+
+.questionDiv {
+  margin-bottom: 50px;
 }
 
 #form {
@@ -34,6 +42,7 @@ h1 {
 h2 {
   font-size: 34px;
   color: rgb(57, 57, 57);
+  line-height: 1em;
 }
 
 h3 {
@@ -56,9 +65,11 @@ p, input, section label {
   position: absolute;
   top: 5%;
   right: 10%;
+  box-shadow: 5px 5px 5px rgba(33, 33, 33, 0.3);
 }
 
 .darkMode {
+  background: none;
   background-color: rgb(46, 46, 46);
 }
 .darkMode h1, .darkMode h2, .darkMode h3, .darkMode p, .darkMode label {
@@ -77,13 +88,35 @@ p, input, section label {
   background-color: white;
   color: rgb(46, 46, 46);
 }
+.darkMode #resultBox {
+  background-color: rgb(46, 46, 46);
+  box-shadow: none;
+}
+.darkMode #footerImgDarkMode {
+  opacity: 70%;
+}
 
 #resultBtn {
   width: 15%;
   min-width: 30px;
   margin-top: 30px;
+  margin-bottom: 30px;
   border-radius: 5px;
   padding: 9px;
+  box-sizing: border-box;
+  border-style: none;
+  background-color: white;
+  box-shadow: 5px 5px 5px rgba(33, 33, 33, 0.3);
+}
+
+#resultBox {
+  width: 80%;
+  height: 70px;
+  padding: 3%;
+  margin-top: 5px;
+  background-color: white;
+  border-radius: 8px 8px 0 0;
+  box-shadow: 5px 5px 5px rgba(33, 33, 33, 0.3);
 }
 
 .greenText {
@@ -100,4 +133,23 @@ p, input, section label {
 
 .hide {
   display: none;
+}
+
+#you-shall-not-pass-img {
+  width: 80%;
+  padding: 3%;
+  background-color: white;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 5px 5px 5px rgba(33, 33, 33, 0.3);
+}
+
+footer {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  position: relative;
+  bottom: 0;
+  overflow-x: hidden;
+}
+footer .footerImg {
+  width: 100vw;
 }/*# sourceMappingURL=style.css.map */

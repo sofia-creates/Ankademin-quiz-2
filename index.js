@@ -1,13 +1,19 @@
 //dark mode
 let darkModeBtn = document.querySelector('#darkModeBtn');
+let footerImgDarkMode = document.querySelector('#footerImgDarkMode');
+let footerImgLightMode = document.querySelector('#footerImgLightMode');
 
 darkModeBtn.addEventListener('click', ()=>{
     if (document.body.classList.contains('darkMode')){
         document.body.classList.remove("darkMode");
+        footerImgDarkMode.classList.add("hide");
+        footerImgLightMode.classList.remove("hide");
     } else if (document.body.classList.contains('darkMode') === false){
-        document.body.classList.add("darkMode"); }
+        document.body.classList.add("darkMode");
+        footerImgLightMode.classList.add("hide");
+        footerImgDarkMode.classList.remove("hide");
+    }
 });
-
 
 
 
@@ -22,7 +28,7 @@ let correctAnswersQ8=  ["A", "B", "C", "D"];
 
 let correctAnswersQ9 = ["D", "E"];
 
-let correctAnswers = ["A", "B", "A", "B", "B", "D", "B", correctAnswersQ8, correctAnswersQ9];
+let correctAnswers = ["A", "B", "A", "B", "D", "D", "B", correctAnswersQ8, correctAnswersQ9];
 
 
 console.log("antal möjliga  rätta svar i facit är "+correctAnswers.length);
@@ -34,16 +40,6 @@ console.log("antal möjliga  rätta svar i facit är "+correctAnswers.length);
 
 let youShallNotPass = document.querySelector('#you-shall-not-pass-img');
 
-
-
-
-//Alert till fråga 5
-/*let q5true = document.querySelector('#q5True');
-
-q5true.addEventListener('change', () =>
-{
-    alert("Nej."); 
-}); */
 
 
 
